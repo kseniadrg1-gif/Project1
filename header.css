@@ -301,3 +301,186 @@ body {
   line-height: 1.6;
   opacity: 0.9;
 }
+/* Картинка уменьшается на планшетах */
+  .intro-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 15px 0;
+  }
+}
+
+/* Медиа-запрос для мобильных (до 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 15px 20px;
+    height: 70px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .pipernet-section h1 {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .problem-text,
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .share-section h2 {
+    font-size: 32px;
+  }
+
+  .intro-section .section-title {
+    text-align: center;
+  }
+
+  /* Картинка центрируется и уменьшается на телефонах */
+  .intro-image {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .team-member-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .team-member-name {
+    font-size: 20px;
+  }
+
+  .team-member-role {
+    font-size: 16px;
+  }
+
+  .footer {
+    height: 140px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+}
+
+/* Дополнительно для очень маленьких экранов (до 360px) */
+@media screen and (max-width: 360px) {
+  .intro-image {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .team-member-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* Адаптация навигации для маленьких экранов */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    height: 70px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  nav span {
+    margin: 0 8px; /* Уменьшаем отступы у разделителей */
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 14px;
+    margin-left: 3px;
+  }
+
+  nav span {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+    height: 60px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin-left: 2px;
+    white-space: nowrap; /* Чтобы текст не переносился */
+  }
+
+  nav span {
+    margin: 0 3px;
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 25px;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+}
+
+/* Для очень маленьких экранов - скрываем разделители */
+@media screen and (max-width: 360px) {
+  nav a {
+    font-size: 11px;
+  }
+
+  /* Можно скрыть разделители на совсем маленьких экранах */
+  nav span {
+    display: none;
+  }
+}
